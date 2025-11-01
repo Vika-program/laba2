@@ -1,0 +1,64 @@
+2025-11-01 03:11:07 - [INFO] - mv dir3 shell.log dir_test2
+2025-11-01 03:13:02 - [ERROR] - [Errno 20] Not a directory: 'dir_test2/test.txt/shell.log'
+2025-11-01 03:53:28 - [ERROR] - [Errno 2] No such file or directory: 'dir4/new'
+2025-11-01 03:53:38 - [ERROR] - [Errno 2] No such file or directory: 'dir4/new'
+2025-11-01 04:34:36 - [ERROR] - [Errno 2] No such file or directory: 'dir'
+2025-11-01 04:48:31 - [INFO] - mv dir_test2 dir_test3
+2025-11-01 04:53:39 - [INFO] - mv new not_exist
+2025-11-01 05:36:08 - [ERROR] - module 'stat' has no attribute 'st_mtime'
+2025-11-01 05:39:12 - [ERROR] - 'str' object has no attribute 'stat'
+2025-11-01 05:40:06 - [ERROR] - name 'Path' is not defined
+2025-11-01 05:40:23 - [INFO] - ls -l
+2025-11-01 05:42:09 - [INFO] - ls -l
+2025-11-01 05:43:38 - [INFO] - ls -l
+2025-11-01 05:48:36 - [INFO] - ls -l
+2025-11-01 10:47:39 - [ERROR] - [Errno 21] Is a directory: 'dir_test3'
+2025-11-01 10:48:08 - [INFO] - cp -r dir_test3 new_dir4
+2025-11-01 11:00:38 - [ERROR] - [Errno 21] Is a directory: 'new_dir4'
+2025-11-01 11:41:56 - [INFO] - cd ../../..
+2025-11-01 11:53:51 - [INFO] - rm -r dir_test3
+2025-11-01 11:56:16 - [ERROR] - name 'current' is not defined
+2025-11-01 11:58:41 - [INFO] - rm -r dir_test3
+2025-11-01 12:26:19 - [INFO] - rm -r not_exist test
+2025-11-01 12:33:16 - [INFO] - ls -l
+2025-11-01 13:11:57 - [ERROR] - [Errno 21] Is a directory: '.'
+2025-11-01 13:12:58 - [INFO] - zip not_exist
+2025-11-01 13:14:43 - [ERROR] - name 'Exeption' is not defined
+2025-11-01 13:15:34 - [INFO] - zip dirr dirr2
+2025-11-01 13:17:53 - [INFO] - zip not_exist.txt
+2025-11-01 13:18:35 - [INFO] - zip dirr
+2025-11-01 13:36:47 - [ERROR] - [Errno 21] Is a directory: 'dirr'
+2025-11-01 13:39:57 - [INFO] - zip not_exist.txt
+2025-11-01 17:10:22 - [ERROR] - Нет такого каталога
+2025-11-01 17:11:46 - [INFO] - tar not_exist.txt f
+2025-11-01 17:14:13 - [ERROR] - [Errno 21] Is a directory: 'dir'
+2025-11-01 17:24:50 - [ERROR] - Нет такого каталога
+2025-11-01 17:25:04 - [INFO] - tar not_exist.txt
+2025-11-01 18:11:59 - [ERROR] - None
+2025-11-01 18:17:50 - [ERROR] - [Errno 2] No such file or directory: 'test.txt'
+2025-11-01 18:18:07 - [ERROR] - nothing to repeat at position 0
+2025-11-01 18:18:41 - [ERROR] - None
+2025-11-01 18:20:29 - [ERROR] - None
+2025-11-01 18:20:43 - [ERROR] - None
+2025-11-01 18:28:09 - [ERROR] - None
+2025-11-01 18:29:11 - [ERROR] - None
+2025-11-01 18:49:35 - [ERROR] - <Result SystemExit(2)>
+2025-11-01 18:55:56 - [ERROR] - <Result SystemExit(2)>
+2025-11-01 19:39:47 - [ERROR] - [Errno 21] Is a directory: 'src'
+2025-11-01 19:42:14 - [INFO] - mv dir dir2
+2025-11-01 19:53:41 - [ERROR] - None
+2025-11-01 20:01:57 - [ERROR] - name 'path' is not defined
+2025-11-01 20:02:28 - [ERROR] - None
+2025-11-01 20:03:08 - [ERROR] - [Errno 2] No such file or directory: 'i'
+2025-11-01 20:03:30 - [ERROR] - [Errno 2] No such file or directory: 'test'
+2025-11-01 20:48:23 - [ERROR] - None
+2025-11-01 20:48:36 - [ERROR] - None
+2025-11-01 20:49:51 - [ERROR] - None
+2025-11-01 20:50:38 - [INFO] - ls -l
+2025-11-01 20:57:46 - [INFO] - history 45
+2025-11-01 21:06:27 - [ERROR] - name 'full' is not defined
+2025-11-01 21:08:55 - [ERROR] - name 'full' is not defined
+2025-11-01 21:11:06 - [INFO] - ls -l
+2025-11-01 21:44:35 - [ERROR] - [Errno 20] Not a directory: '/home/vika/laba2/README.md/.history'
+2025-11-01 21:45:50 - [INFO] - ls -l
+2025-11-01 21:46:55 - [INFO] - zip dir/test.txt

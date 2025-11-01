@@ -1,0 +1,166 @@
+1 : cp 2.txt 3.txt
+2 : cp 2.txt 3.txt
+3 : cp 2.txt 3.txt
+4 : cp 2.txt 3.txt
+5 : cp 2.txt 3.txt
+6 : history
+7 : history
+8 : history 3
+9 : history 3
+10 : history
+11 : ea12 : a12 : exit12 : bs
+12 : s
+13 : s
+14 : GEAF
+15 : exit
+16 : ls shell.log
+17 : ls -l shell.log
+18 : exit
+19 : ls shell.log
+20 : exit
+21 : ls shell.log
+22 : exit
+23 : ls shell.log
+24 : exit
+25 : ls shell.log
+26 : ls -l shell.log
+27 : ls -l shell.log
+28 : exit
+29 : ls -l shell.log
+30 : exit
+31 : ls -l shell.log
+32 : exit
+33 : ls -l shell.log
+34 : exit
+35 : ls -l
+36 : ls -l shell.log
+37 : ls
+38 : ls
+39 : exit
+40 : ls -l shell.log
+41 : ls shell.loog
+42 : ls shell.log
+43 : exit
+44 : ls -l shell.log
+45 : exit
+46 : ls -l shell.log
+47 : exit
+48 : ls -l shell.log
+49 : exit
+50 : ls -l shell.log
+51 : exit
+52 : ls shell.log
+53 : ls -l shell.log
+54 : ls -l src
+55 : ls src
+56 : exit
+57 : ls space
+58 : exit
+59 : ls dir
+60 : exit
+61 : ls shell.log
+62 : exit
+63 : ls shell.log
+64 : exit
+65 : exit
+66 : ls -l src/main
+67 : ls -l src
+68 : exit
+69 : exit
+70 : cd ..
+71 : cd ..
+72 : cat shell.log
+73 : cat shell.log
+74 : cat shell.log
+75 : cat shell.log
+76 : cat fff
+77 : cat src
+78 : mv dir/1.txt dir/shell.log shell.log
+79 : mv dir/1.txt dir/shell.log
+80 : cd dir
+81 : >mv shell.log dir_test/dir_test2/test.txt shell.log
+82 : mv shell.log new
+83 : mv new testt.txt .history
+84 : mv new testt.txt dir
+85 : cd dir
+86 : mv dir/dir_test dir/new dir/dir_test2
+87 : mv dir/dir_test dir/dir_test2
+88 : mv dir/dir_test dir/testt.txt dir/dir_test2
+89 : mv dir/dir_test/ dir/testt.txt dir/dir_test2/
+90 : mv dir/dir_test/ dir/testt.txt dir3/
+91 : mv dir/dir_test/ dir/testt.txt dir3/
+92 : mv dir/dir_test/ dir/testt.txt dir3
+93 : mv dir/dir_test/ dir/testt.txt dir3
+94 : mv dir dir3
+95 : mv dir3 dir_test2
+96 : mv dir3 shell.log dir_test2
+97 : >mv dir3 shell.log dir_test2
+98 : mv dir3 shell.log dir_test2
+99 : mv shell.log dir_test2/new  dir_test2/test.txt
+100 : mv new dir_test2 dir4
+101 : mv new dir_test2 dir4/
+102 : mv dir dir_test2
+103 : mv dir_test2 dir_test3
+104 : mv new not_exist
+105 : #источник не существует
+106 : new_dir2 = self.sandbox / 'new_dir2'
+107 : new_dir2.mkdir(parents=True)
+108 : result = self.runner.invoke(app, ['mv', "file.txt", str(new_dir2)])
+109 : assert result.exit_code == 0
+110 : assert 'mv : ошибка' in result.output
+111 :
+112 :
+113 :
+114 : ls -l
+115 : ls -l
+116 : ls -l
+117 : ls -l
+118 : ls -l
+119 : ls -l
+120 : ls -l
+121 : cp dir_test3 new_dir4
+122 : cp -r dir_test3 new_dir4
+123 : cp new_dir4 dir_test3
+124 : сcd dir_test3/new_dir3/new_dir4
+125 : cd dir_test3/new_dir3/new_dir4
+126 : ls -l
+127 : ls -l
+128 : zip not_exist
+129 : zip not_exist
+130 : zip dir dir2
+131 : zip dirr dirr2
+132 : zip not_exist.txt
+133 : zip dirr
+134 : unzip dirr
+135 : zip not_exist.txt
+136 : tar not_exist f
+137 : tar not_exist.txt f
+138 : untar dir
+139 : tar not_exist
+140 : tar not_exist.txt
+141 : grep -r -i inf shell.log dir
+142 : grep *.txt test.txt
+143 : grep *.txt dir/test.txt
+144 : grep *.txt dir
+145 : grep *.txt dir
+146 : grep -r *.txt dir
+147 : grep -r [a-z]{5} dir
+148 : grep -r [a-z]{5} dir
+149 : cat src
+150 : mv dir dir2
+151 : grep import src/main.py
+152 : grep inf src
+153 : grep i src
+154 : grep i i
+155 : grep test test
+156 : history 50
+157 : history 500
+158 : ls -l
+159 : ls -l
+160 : history 45
+161 : ls -l
+162 : ls -l
+163 : ls -l
+164 : ls -l
+165 : ls -l
+166 : zip dir/test.txt
