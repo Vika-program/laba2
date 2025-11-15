@@ -7,12 +7,15 @@ def log(command, res):
     :param res: её результат (успех / ошибка)
     :return: ничего
     """
-    with open("shell.log", "a") as file:
-        time = datetime.now()
-        real_time = time.replace(microsecond=0)
-        if time.microsecond >= 500000:
-            real_time += timedelta(seconds=1)
-        if res is None:
-            file.write(f"{real_time} - [INFO] - {command}\n")
-        else:
-            file.write(f"{real_time} - [ERROR] - {res}\n")
+    try:
+        with open("shell.log", "a") as file:
+            time = datetime.now()
+            real_time = time.replace(microsecond=0)
+            if time.microsecond >= 500000:
+                real_time += timedelta(seconds=1)
+            if res is None:
+                file.write(f"{real_time} - [INFO] - {command}\n")
+            else:
+                file.write(f"{real_time} - [ERROR] - {res}\n")
+    except Exception as e:
+        print(f"ошибка : {e}")

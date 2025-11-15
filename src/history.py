@@ -1,4 +1,6 @@
 import typer
+from pathlib import Path
+history_file = Path(".history")
 
 def log_history(inp):
     """
@@ -6,24 +8,30 @@ def log_history(inp):
     :param inp: ввод пользователя
     :return: ничего
     """
-    with open(".history", "r") as file:
-        num = 1
-        for line in file:
-            num += 1
-    with open(".history", "a") as file:
-        file.write(f"{num} : {inp}\n")
+    try:
+        with open(history_file, "r") as file:
+            num = 1
+            for line in file:
+                num += 1
+        with open(history_file, "a") as file:
+            file.write(f"{num} : {inp}\n")
+    except Exception as e:
+        print(f"ошибка : {e}")
 
 def reg_history_command(app: typer.Typer):
+
     @app.command()
-    def history(n: str = typer.Argument(5)):
+    def history(n: int = typer.Argument(5)):
         """
         Выводит n строк и файла .history
         :param n: количество последних строк, которые нужно вывести
         :return: печатает эти строки
-        """
-        n = int(n)
-        with open('.history', 'r') as file:
-            lines = file.readlines()
-            n = min(len(lines), n)
-            for i in range(len(lines) - n, len(lines)):
-                print(lines[i].rstrip())
+            """
+        try:
+            with open(history_file, 'r') as file:
+                lines = file.readlines()
+                n = min(len(lines), n)
+                for i in range(len(lines) - n, len(lines)):
+                    print(lines[i].rstrip())
+        except Exception as e:
+            print(f"ошибка : {e}")
