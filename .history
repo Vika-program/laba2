@@ -164,3 +164,9 @@
 164 : ls -l
 165 : ls -l
 166 : zip dir/test.txt
+167 : history
+168 : history
+169 : history
+170 : history 100
+171 : history
+172 : history
