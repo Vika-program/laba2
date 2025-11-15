@@ -1,4 +1,6 @@
 from datetime import datetime, timedelta
+import os
+log_file = os.path.abspath("shell.log")
 
 def log(command, res):
     """
@@ -8,7 +10,7 @@ def log(command, res):
     :return: ничего
     """
     try:
-        with open("shell.log", "a") as file:
+        with open(log_file, "a") as file:
             time = datetime.now()
             real_time = time.replace(microsecond=0)
             if time.microsecond >= 500000:

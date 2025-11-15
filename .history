@@ -171,3 +171,24 @@
 171 : history
 172 : history
 173 : history
+174 : ls -l
+175 : cd ..
+176 : cd ..
+177 : cd vika
+178 : cd laba2
+179 : cd ..
+180 : cd ..
+181 : cd ..
+182 : history
+183 : ls -l
+184 : cd home/vika/laba2
+185 : ls -l
+186 : cd ..
+187 : cd ..
+188 : cd ..
+189 : cd ..
+190 : cd ..
+191 : ls -l
+192 : cd ..
+193 : cd ..
+194 : history

@@ -1,6 +1,6 @@
 import typer
-from pathlib import Path
-history_file = Path(".history")
+import os
+history_file = os.path.abspath(".history")
 
 def log_history(inp):
     """
